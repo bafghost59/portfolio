@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Labo Zombie",
+    "image": [
+    "/assets/projects/labo-zombie.jpg",
+     "/assets/projects/labo-zombie.jpg",
+     "/assets/projects/labo-zombie.jpg"
+  ],
+    "description": "Escape game dans un laboratoire infecté."
+  },
+  {
+    "id": 2,
+    "title": "Prison Break",
+    "image": [
+    "/assets/projects/prison.jpg",
+    "/assets/projects/prison.jpg",
+    "/assets/projects/prison.jpg"
+],
+    "description": "Escape game évasion de prison la bête."
+  },
+  {
+    "id": 3,
+    "title": "Manoir Hanté",
+    "image": [
+        "/assets/projects/manoir.jpg",
+    "/assets/projects/manoir.jpg",
+    "/assets/projects/manoir.jpg"
+],
+    "description": "Escape game dans un vieux manoir la bete."
+  },
+  {
+    "id": 4,
+    "title": "Manoir Hanté2",
+    "image": [
+    "/assets/projects/manoir2.jpg",
+    "/assets/projects/manoir2.jpg",
+    "/assets/projects/manoir2.jpg"],
+    "description": "Escape game dans un vieux manoir la bête."
+  },
+  {
+    "id": 5,
+    "title": "Manoir Hanté3",
+    "image": [
+    "/assets/projects/manoir3.jpg",
+    "/assets/projects/manoir3.jpg",
+   "/assets/projects/manoir3.jpg"],
+    "description": "Escape game dans un vieux manoir la bête."
+  }
+]
