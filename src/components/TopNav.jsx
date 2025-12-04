@@ -1,24 +1,25 @@
-import { useState } from "react"; 
-import { Menu, X } from "lucide-react"; 
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const tabs = [
-  { label: "Présentation", target: "#presentation" }, 
-  { label: "Projets Réalisés", target: "#projects" }, 
-  { label: "Contact", target: "#contact" }, 
+  { label: "Présentation", target: "#presentation" },
+  { label: "Projets réalisés", target: "#projects" },
+  { label: "Contact", target: "#contact" },
+];
 
-export default function TopNav() { 
-  const [open, setOpen] = useState(false); 
+export default function TopNav() {
+  const [open, setOpen] = useState(false);
 
-  const scrollTo = (selector) => { 
+  const scrollTo = (selector) => {
     const el = document.querySelector(selector);
     if (!el) return;
     el.scrollIntoView({ behavior: "smooth" });
     setOpen(false);
   };
 
-  const handleClick = () => { 
+  const handleClick = () => {
     window.open(
-      "https://github.com/bafghost59/CV/raw/main/CV-TOURE-Bafode.pdf",
+      "https://github.com/bafghost59/CV/blob/main/CV%20TOURE-Bafode.pdf",
       "_blank",
       "noopener,noreferrer"
     );
@@ -26,7 +27,7 @@ export default function TopNav() {
 
   return (
     <header className="w-full flex justify-center py-4">
-      <div className="w-full max-w-5xl rounded-3xl bg-[#240046] px-4 md:px-6 py-3 md:py-4 flex items-center justify-between backdrop-blur-md shadow-[0_18px_45px_rgba(0,0,0,0.6)] border border-white/5">
+      <div className="w-full max-w-5xl rounded-3xl bg-[#3C096C]/40 px-4 md:px-6 py-3 md:py-4 flex items-center justify-between backdrop-blur-md shadow-[0_18px_45px_rgba(0,0,0,0.6)] border border-white/5">
         <div className="text-white font-semibold text-sm md:text-base leading-tight">
           Bafodé
           <br />
@@ -37,8 +38,8 @@ export default function TopNav() {
         <nav className="hidden md:flex relative rounded-full bg-black/50 px-1 py-1 items-center gap-1">
           {tabs.map((tab) => (
             <button
-              key={tab.target} 
-              onClick={() => scrollTo(tab.target)} 
+              key={tab.target}
+              onClick={() => scrollTo(tab.target)}
               className="px-5 py-2 text-sm rounded-full text-gray-300 transition-all hover:bg-white hover:text-black"
             >
               {tab.label}
@@ -46,39 +47,42 @@ export default function TopNav() {
           ))}
         </nav>
 
+  
         <button
-          onClick={handleClick} 
+          onClick={handleClick}
           className="hidden md:inline-flex rounded-full bg-white text-black px-6 py-2 text-sm font-medium"
         >
           Mon CV
         </button>
 
+
         <button
           className="md:hidden text-white"
-          onClick={() => setOpen((prev) => !prev)} 
+          onClick={() => setOpen((prev) => !prev)}
           aria-label="Ouvrir le menu"
         >
-          {open ? <X size={24} /> : <Menu size={24} />} 
+          {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
+
 
       <div
         className={`md:hidden fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${
           open ? "opacity-100 visible" : "opacity-0 invisible"
-        }`} 
-        onClick={() => setOpen(false)} 
+        }`}
+        onClick={() => setOpen(false)}
       >
         <div
           className={`absolute top-0 right-0 h-full w-64 bg-[#240046] p-6 transform transition-transform duration-300 ${
             open ? "translate-x-0" : "translate-x-full"
-          }`} 
-          onClick={(e) => e.stopPropagation()} 
+          }`}
+          onClick={(e) => e.stopPropagation()}
         >
           <ul className="flex flex-col gap-6 mt-10">
             {tabs.map((tab) => (
               <li key={tab.target}>
                 <button
-                  onClick={() => scrollTo(tab.target)} 
+                  onClick={() => scrollTo(tab.target)}
                   className="w-full text-left text-lg rounded-full px-4 py-2 text-[#e0aaff] transition-all hover:bg-white hover:text-black"
                 >
                   {tab.label}
@@ -88,8 +92,8 @@ export default function TopNav() {
             <li className="pt-2">
               <button
                 onClick={() => {
-                  setOpen(false); 
-                  handleClick(); 
+                  setOpen(false);
+                  handleClick();
                 }}
                 className="w-full rounded-full bg-white text-black px-4 py-2 text-base font-medium"
               >
@@ -102,5 +106,4 @@ export default function TopNav() {
     </header>
   );
 }
-
 

@@ -4,7 +4,8 @@ import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import './App.css'
 import HomePage from './pages/HomePage.jsx'
 import  DockDemo  from './components/DockDemo'
-import TestCV from "./components/TestCV";
+
+
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
     </Routes>
     </BrowserRouter>
 <DockDemo />
+
+
     </>
   )
 }
