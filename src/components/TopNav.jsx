@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
+
 const tabs = [
   { label: "Présentation", target: "#presentation" },
   { label: "Projets réalisés", target: "#projects" },
@@ -26,16 +27,14 @@ export default function TopNav() {
   };
 
   return (
-    <header className="w-full flex justify-center py-4">
-      <div className="w-full max-w-5xl rounded-3xl bg-[#3C096C]/40 px-4 md:px-6 py-3 md:py-4 flex items-center justify-between backdrop-blur-md shadow-[0_18px_45px_rgba(0,0,0,0.6)] border border-white/5">
+    <header className="w-full flex justify-center py-5">
+      <div className="w-full max-w-5xl rounded-2xl bg-[#3C096C]/40 px-4 md:px-4 py-3 md:py-5 flex items-center justify-between backdrop-blur-md shadow-2xl border border-white/5">
         <div className="text-white font-semibold text-sm md:text-base leading-tight">
-          Bafodé
-          <br />
-          TOURE
+        <p className="text-white font-semibold text-sm md:text-base leading-tigh">Bafodé <br/> TOURE</p>
         </div>
 
-        {/* Navbar desktop */}
-        <nav className="hidden md:flex relative rounded-full bg-black/50 px-1 py-1 items-center gap-1">
+
+        <nav className="hidden md:flex relative rounded-full bg-black/50 px-1 py-1 items-center gap-3">
           {tabs.map((tab) => (
             <button
               key={tab.target}

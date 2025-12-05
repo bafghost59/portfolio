@@ -7,7 +7,7 @@ export default function DockDemo() {
   
   const DATA = {
     navbar: [
-      { href: "", icon: HomeIcon, label: "Home" },
+      { name : "Accueil", href: "", icon: HomeIcon, label: "Home" },
     ],
     social: [
       { name: "GitHub", url: "https://github.com/bafghost59", icon: Github },
@@ -22,16 +22,17 @@ export default function DockDemo() {
 
   return (
     <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
-      <div className="flex items-center gap-3 rounded-full bg-slate-900/60 px-4 py-2 shadow-lg backdrop-blur-xs border border-white/10">
+      <div className="flex items-center gap-7 rounded-full bg-slate-900/60 px-8 py-4 shadow-lg backdrop-blur-xs border border-white/5">
 
         {DATA.navbar.map((item) => (
           <a
             key={item.label}
             href={item.href}
             aria-label={item.label}
-            className="flex h-10 w-10 items-center justify-center rounded-full text-slate-100 hover:bg-slate-700/80 transition"
+            className="flex h-10 w-10 flex-col items-center justify-center rounded-full text-slate-100 hover:bg-slate-700/80 transition"
           >
-            <item.icon className="h-4 w-4" />
+            <item.icon className="h-6 w-6" />
+          <span className="text-xs mt-1">{item.name}</span>
           </a>
         ))}
 
@@ -44,10 +45,10 @@ export default function DockDemo() {
             key={item.name}
             href={item.url}
             aria-label={item.name}
-            className="flex h-10 w-10 items-center justify-center rounded-full text-slate-100 hover:bg-slate-700/80 transition"
+            className="flex h-10 w-10 flex-col items-center justify-center rounded-full text-slate-100 hover:bg-slate-700/80 transition"
             >
-            <item.icon className="h-4 w-4" />
-            
+            <item.icon className="h-6 w-6" />
+            <span className="text-xs mt-1">{item.name}</span>
           </a>
         ))}
       </div>
