@@ -12,7 +12,7 @@ const techs = [
   { name: "React Bootstrap", src: "/React-Bootstrap.svg" },
   { name: "React", src: "/React.svg" },
   { name: "Tailwind CSS", src: "/Tailwind-CSS.svg" },
-  { name: "Visual Studio Code", src: "/Visual-Studio-Code-VSCode.svg" },
+  { name: "VS Code", src: "/Visual-Studio-Code-VSCode.svg" },
   { name: "Vite.js", src: "/Vite.js.svg" },
 ];
 

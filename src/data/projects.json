@@ -1,50 +1,56 @@
 [
   {
     "id": 1,
-    "title": "Labo Zombie",
+    "title": "Projet TodoList",
     "image": [
-    "/assets/projects/labo-zombie.jpg",
-     "/assets/projects/labo-zombie.jpg",
-     "/assets/projects/labo-zombie.jpg"
+    "src/assets/TodoList1.png",
+     "src/assets/TodoList2.png",
+     "src/assets/TodoList 3.png",
+     "src/assets/TodoList4.png"
   ],
-    "description": "Escape game dans un laboratoire infecté."
+    "description": "Projet Todolist codé en Front/Back avec authentification sécurisée (JWT)."
   },
   {
     "id": 2,
-    "title": "Prison Break",
+    "title": "Projet groupe - Escape Game",
     "image": [
-    "/assets/projects/prison.jpg",
-    "/assets/projects/prison.jpg",
-    "/assets/projects/prison.jpg"
+    "src/assets/EG1.png",
+    "src/assets/EG2.png",
+    "src/assets/EG3.png",
+    "src/assets/EG4.png",
+    "src/assets/EG5.png",
+    "src/assets/EG6.png",
+    "src/assets/EG7.png",
+    "src/assets/EG8.png",
+    "src/assets/EG9.png",
+    "src/assets/EG10.png",
+    "src/assets/EG11.png",
+    "src/assets/EG12.png",
+    "src/assets/EG13.png",
+    "src/assets/EG14.png"
 ],
-    "description": "Escape game évasion de prison la bête."
+    "description": "Projet de formation Escape Game réalisé en groupe avec Marion et Cyprien. Développement Front + Back"
   },
   {
     "id": 3,
-    "title": "Manoir Hanté",
+    "title": "BafoCiné",
     "image": [
-        "/assets/projects/manoir.jpg",
-    "/assets/projects/manoir.jpg",
-    "/assets/projects/manoir.jpg"
+    "src/assets/BC1.png",
+    "src/assets/BC2.png",
+    "src/assets/BC3.png"
 ],
-    "description": "Escape game dans un vieux manoir la bete."
+    "description": "Projet Front BafoCiné avec appel à une API officielle - MovieDB."
   },
   {
     "id": 4,
-    "title": "Manoir Hanté2",
+    "title": "Lol by Bafo",
     "image": [
-    "/assets/projects/manoir2.jpg",
-    "/assets/projects/manoir2.jpg",
-    "/assets/projects/manoir2.jpg"],
-    "description": "Escape game dans un vieux manoir la bête."
-  },
-  {
-    "id": 5,
-    "title": "Manoir Hanté3",
-    "image": [
-    "/assets/projects/manoir3.jpg",
-    "/assets/projects/manoir3.jpg",
-   "/assets/projects/manoir3.jpg"],
-    "description": "Escape game dans un vieux manoir la bête."
+    "src/assets/Lol1.png",
+    "src/assets/Lol2.png",
+    "src/assets/Lol3.png",
+    "src/assets/Lol4.png",
+    "src/assets/Lol5.png"
+  ],
+    "description": "Projet Front avec appel à une API officielle - League of Legends."
   }
 ]

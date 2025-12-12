@@ -59,25 +59,30 @@ export default function HomePage() {
 
         <section
           id="projects"
-          className="animate-slide-in h-screen snap-start flex flex-col justify-center mt-10 max-w-6xl mx-auto px-4"
+          className="animate-slide-in snap-start flex flex-col gap-6 pt-32 max-w-4xl mx-auto "
         >
-          <h1 className="text-3xl md:text-4xl font-bold text-[#ede9fe] text-center mb-6">
+          <h1 className="text-3xl md:text-4xl h-full font-bold text-[#ede9fe] text-center mb-3">
             Projets Réalisés
           </h1>
 
-          <div className="flex snap-x snap-mandatory overflow-x-auto gap-6 pb-4 -mx-4 px-4 w-full">
+          <div className="grid  sm:grid-cols-2 gap-6  w-full ">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="snap-center snap-always shrink-0 w-[85vw] sm:w-[60vw] md:w-80"
+                className="flex flex-col overflow-x-auto snap-x snap-mandatory  gap-6 w-full rounded-t-2xl bg-slate-900/70 rounded-2xl border border-white/10 shadow-xl"
               >
-                <div className="bg-slate-900/70 rounded-2xl border border-white/10 shadow-xl overflow-hidden">
+                <div className="bg-slate-900/70 rounded-2xl border border-white/10 shadow-xl flex snap-x snap-mandatory overflow-x-auto  w-full">
+                {project.image.map((imgPath) => (
                   <img
-                    src={project.image[0]}
+                    key={imgPath}
+                    src={imgPath}
                     alt={project.title}
-                    className="w-full h-56 sm:h-64 object-cover"
+                    className="snap-center shrink-0 w-full  object-contain"
                   />
-                  <div className="p-4">
+                ))}
+                </div>
+                
+                  <div className="p-2 bg-slate-900/70 ">
                     <p className="text-sm font-semibold text-[#ede9fe]">
                       {project.title}
                     </p>
@@ -85,10 +90,15 @@ export default function HomePage() {
                       {project.description}
                     </p>
                   </div>
-                </div>
+                  
               </div>
             ))}
           </div>
+        </section>
+        <section
+          id="technos"
+          className="animate-slide-in h-screen snap-start flex flex-col items-center justify-center px-4"
+        >
           <h1 className="mt-12 text-2xl md:text-3xl font-bold text-[#ede9fe] text-center mb-6 tracking-wider">
             Technos utilisées
           </h1>
