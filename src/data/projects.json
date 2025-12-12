@@ -3,10 +3,10 @@
     "id": 1,
     "title": "Projet TodoList",
     "image": [
-    "src/assets/TodoList1.png",
-     "src/assets/TodoList2.png",
-     "src/assets/TodoList 3.png",
-     "src/assets/TodoList4.png"
+    "public/TodoList1.png",
+     "public/TodoList2.png",
+     "public/TodoList 3.png",
+     "public/TodoList4.png"
   ],
     "description": "Projet Todolist codé en Front/Back avec authentification sécurisée (JWT)."
   },
@@ -14,20 +14,20 @@
     "id": 2,
     "title": "Projet groupe - Escape Game",
     "image": [
-    "src/assets/EG1.png",
-    "src/assets/EG2.png",
-    "src/assets/EG3.png",
-    "src/assets/EG4.png",
-    "src/assets/EG5.png",
-    "src/assets/EG6.png",
-    "src/assets/EG7.png",
-    "src/assets/EG8.png",
-    "src/assets/EG9.png",
-    "src/assets/EG10.png",
-    "src/assets/EG11.png",
-    "src/assets/EG12.png",
-    "src/assets/EG13.png",
-    "src/assets/EG14.png"
+    "public/EG1.png",
+    "public/EG2.png",
+    "public/EG3.png",
+    "public/EG4.png",
+    "public/EG5.png",
+    "public/EG6.png",
+    "public/EG7.png",
+    "public/EG8.png",
+    "public/EG9.png",
+    "public/EG10.png",
+    "public/EG11.png",
+    "public/EG12.png",
+    "public/EG13.png",
+    "public/EG14.png"
 ],
     "description": "Projet de formation Escape Game réalisé en groupe avec Marion et Cyprien. Développement Front + Back"
   },
@@ -35,9 +35,9 @@
     "id": 3,
     "title": "BafoCiné",
     "image": [
-    "src/assets/BC1.png",
-    "src/assets/BC2.png",
-    "src/assets/BC3.png"
+    "public/BC1.png",
+    "public/BC2.png",
+    "public/BC3.png"
 ],
     "description": "Projet Front BafoCiné avec appel à une API officielle - MovieDB."
   },
@@ -45,11 +45,11 @@
     "id": 4,
     "title": "Lol by Bafo",
     "image": [
-    "src/assets/Lol1.png",
-    "src/assets/Lol2.png",
-    "src/assets/Lol3.png",
-    "src/assets/Lol4.png",
-    "src/assets/Lol5.png"
+    "public/Lol1.png",
+    "public/Lol2.png",
+    "public/Lol3.png",
+    "public/Lol4.png",
+    "public/Lol5.png"
   ],
     "description": "Projet Front avec appel à une API officielle - League of Legends."
   }
