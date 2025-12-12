@@ -26,7 +26,7 @@ export default function HomePage() {
 
           <div className="w-full max-w-6xl h-[55vh]">
             <img
-              src="public/IMG_0174.jpg"
+              src="/IMG_0174.jpg"
               alt="Développeur 4K"
               className="w-full h-full rounded-2xl object-cover border border-white/10 shadow-2xl"
             />
