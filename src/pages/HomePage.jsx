@@ -26,7 +26,7 @@ export default function HomePage() {
 
           <div className="w-full max-w-6xl h-[55vh]">
             <img
-              src="/IMG_0174.jpg"
+              src="./IMG_0174.jpg"
               alt="Développeur 4K"
               className="w-full h-full rounded-2xl object-cover border border-white/10 shadow-2xl"
             />
@@ -51,8 +51,7 @@ export default function HomePage() {
             efficaces et centrées utilisateur. <br />
             Curieux, rigoureux et autonome, j’apprécie particulièrement les
             environnements collaboratifs qui favorisent l’échange et la qualité
-            du produit final. <br /> À la recherche d’opportunités, notamment de
-            stage, je vous invite à découvrir mon portfolio pour explorer mes
+            du produit final. <br /> À la recherche d’opportunités, notamment d'une alternance, je vous invite à découvrir mon portfolio pour explorer mes
             projets et ma progression technique.
           </p>
         </section>
@@ -65,7 +64,7 @@ export default function HomePage() {
             Projets Réalisés
           </h1>
 
-          <div className="grid  sm:grid-cols-2 gap-6  w-full ">
+          <div className="grid  sm:grid-cols-2 gap-2  w-full ">
             {projects.map((project) => (
               <div
                 key={project.id}
